@@ -1,0 +1,162 @@
+:root {
+    --bg: #ffffff;
+    --text: #1f2937;
+    --primary: #2563eb;
+    --card: #f3f4f6;
+}
+
+body.dark {
+    --bg: #0f172a;
+    --text: #e5e7eb;
+    --card: #1e293b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero span {
+    color: var(--primary);
+}
+
+.btn {
+    width: fit-content;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* SECTION */
+.section {
+    padding: 80px 20px;
+}
+
+.skill-grid,
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card,
+.project-card {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover,
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 4px 10px;
+    background: var(--primary);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.75rem;
+}
+
+/* TOGGLE & MOBILE */
+#themeToggle {
+    background: var(--card);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        background: var(--card);
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: var(--card);
+}

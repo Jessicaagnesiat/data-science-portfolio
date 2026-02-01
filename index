@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="container navbar">
+        <div class="logo">
+            <a href="#"><span>Data</span>Scientist</a>
+        </div>
+
+        <div class="nav-right">
+            <button id="themeToggle">
+                <span class="icon sun">☀️</span>
+                <span class="icon moon">🌙</span>
+            </button>
+            <button class="hamburger" id="hamburger">☰</button>
+        </div>
+
+        <ul class="menu" id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero container">
+    <h1>Hi, I’m <span>Jessica</span></h1>
+    <p>Data Scientist | Data Analyst | Machine Learning Enthusiast</p>
+    <a href="#projects" class="btn">View Projects</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section container">
+    <h2>About Me</h2>
+    <p>
+        I am a Data Science graduate with strong interests in data analysis,
+        machine learning, and business insights. I enjoy transforming raw data
+        into meaningful stories that support decision making.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section container">
+    <h2>Technical Skills</h2>
+    <div class="skill-grid">
+        <div class="card">Python</div>
+        <div class="card">SQL</div>
+        <div class="card">Pandas & NumPy</div>
+        <div class="card">Matplotlib & Seaborn</div>
+        <div class="card">Machine Learning</div>
+        <div class="card">Statistics</div>
+        <div class="card">Power BI / Tableau</div>
+        <div class="card">EDA</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section container">
+    <h2>Data Science Projects</h2>
+
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Customer Churn Analysis</h3>
+            <p>
+                Analyzed customer behavior using EDA and machine learning
+                models to predict churn and recommend retention strategies.
+            </p>
+            <span class="tag">Classification</span>
+            <span class="tag">EDA</span>
+        </div>
+
+        <div class="project-card">
+            <h3>Sales Performance Dashboard</h3>
+            <p>
+                Built an interactive dashboard to monitor KPIs and trends,
+                supporting business decision making.
+            </p>
+            <span class="tag">Data Visualization</span>
+        </div>
+
+        <div class="project-card">
+            <h3>House Price Prediction</h3>
+            <p>
+                Developed regression models to predict house prices based on
+                multiple features.
+            </p>
+            <span class="tag">Regression</span>
+            <span class="tag">Machine Learning</span>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section container">
+    <h2>Contact</h2>
+    <p>Email: jessicaagnesiat@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/jessicaagnesiat</p>
+    <p>GitHub: github.com/jessicaagnesiat</p>
+</section>
+
+<footer>
+    <p>© 2026 Data Science Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
